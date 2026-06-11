@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import InteractiveComputer from "./InteractiveComputer";
 
 const About = () => {
   return (
@@ -14,11 +15,9 @@ const About = () => {
       <div className="relative mx-auto grid max-w-7xl gap-16 px-6 md:grid-cols-[420px_1fr] md:px-10">
         <div className="relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 p-6 shadow-glow md:p-8">
           <div className="absolute inset-0 rounded-[32px] bg-[radial-gradient(circle_at_top,_rgba(212,161,90,0.14),transparent_38%)]" />
-          <img
-            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
-            alt="Profile"
-            className="relative z-10 h-full min-h-[420px] w-full rounded-[24px] object-cover"
-          />
+          <div className="relative z-10 h-full min-h-[420px] w-full overflow-hidden rounded-[24px] bg-[#080b10]">
+            <InteractiveComputer />
+          </div>
         </div>
 
         <div className="relative z-10 space-y-8 text-white">
@@ -26,55 +25,26 @@ const About = () => {
             <p className="text-sm uppercase tracking-[0.3em] text-gold/90">
               About Me
             </p>
-            <h2 className="text-4xl font-black md:text-5xl">
-              A modern developer with luxury design taste
-            </h2>
             <p className="max-w-2xl text-base leading-8 text-white/80 md:text-lg">
-              I'm a passionate Front End Web Developer with 2 years of
-              experience building modern, scalable web applications. I
-              specialize in creating beautiful, functional interfaces and robust
-              backend systems that users love.
+              I am a Frontend Developer dedicated to creating modern,
+              responsive, and user-centered web experiences. With experience in
+              HTML, CSS, JavaScript, Tailwind CSS, React, and WordPress, I
+              specialize in transforming designs into functional and visually
+              appealing websites.
             </p>
-          </div>
-
-          <div className="grid gap-6 rounded-3xl border border-white/10 bg-black/50 p-8 shadow-glow">
-            <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="h-10 w-10 rounded-full bg-gold/10 text-center leading-10 text-gold">
-                  01
-                </div>
-                <div>
-                  <p className="text-sm uppercase tracking-[0.3em] text-gold/90">
-                    Education
-                  </p>
-                  <p className="text-base text-white/80">
-                    Bachelor of Science in Information Technology
-                  </p>
-                  <p className="text-sm text-white/60">
-                    Baliwag Polytechnic College — 2025
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              <p className="text-sm uppercase tracking-[0.3em] text-gold/90">
-                What I'm Good At
-              </p>
-              <ul className="grid gap-3 text-white/80 sm:grid-cols-2">
-                {[
-                  "Building responsive and accessible web applications",
-                  "Database design and optimization",
-                  "API Integration",
-                  "Team collaboration and mentoring",
-                ].map((item) => (
-                  <li key={item} className="flex gap-3 text-sm leading-7">
-                    <span className="text-gold">✔</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <p className="max-w-2xl text-base leading-8 text-white/80 md:text-lg">
+              I have built responsive web applications, customized WordPress
+              websites, and developed dynamic user interfaces that prioritize
+              performance, accessibility, and usability. My focus is on
+              delivering clean, maintainable code while ensuring a seamless
+              experience across all devices.
+            </p>
+            <p className="max-w-2xl text-base leading-8 text-white/80 md:text-lg">
+              I am constantly learning and improving my skills to stay up to
+              date with the latest frontend technologies and industry best
+              practices, allowing me to build efficient, scalable, and engaging
+              digital solutions.
+            </p>
           </div>
         </div>
       </div>
