@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import InteractiveComputer from "./InteractiveComputer";
+// import InteractiveComputer from "./InteractiveComputer";
 
 const About = () => {
   return (
@@ -15,9 +15,9 @@ const About = () => {
       <div className="relative mx-auto grid max-w-7xl gap-16 px-6 md:grid-cols-[420px_1fr] md:px-10">
         <div className="relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 p-6 shadow-glow md:p-8">
           <div className="absolute inset-0 rounded-[32px] bg-[radial-gradient(circle_at_top,_rgba(212,161,90,0.14),transparent_38%)]" />
-          <div className="relative z-10 h-full min-h-[420px] w-full overflow-hidden rounded-[24px] bg-[#080b10]">
+          {/* <div className="relative z-10 h-full min-h-[420px] w-full overflow-hidden rounded-[24px] bg-[#080b10]">
             <InteractiveComputer />
-          </div>
+          </div> */}
         </div>
 
         <div className="relative z-10 space-y-8 text-white">

@@ -1,3 +1,9 @@
-declare module "@react-three/fiber/jsx-runtime" {
-  export * from "react/jsx-runtime";
+import type { ThreeElements } from "@react-three/fiber";
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements extends ThreeElements {}
+  }
 }
+
+export {};
